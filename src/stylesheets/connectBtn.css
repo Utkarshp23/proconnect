@@ -37,3 +37,14 @@
     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
     inset 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (max-width: 760px) {
+  .connectBtn-wrapper button {
+    width: 12.8rem;
+    height: 4rem;
+    /* background-color: white; */
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
