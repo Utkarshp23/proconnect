@@ -105,3 +105,41 @@
     border-bottom-color: #00ccff;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .wifi-loader-wrapper {
+    width: 15px;
+    height: 15px;
+  }
+  .wifi-loader {
+    top: -38px;
+    left: -38px;
+    width: 60px;
+    height: 60px;
+    border: 15px solid transparent;
+    border-top: 15px solid #292a33;
+    border-bottom: 15px solid #292a33;
+    /* border-top: 15px;
+    border-bottom: 15px; */
+  }
+  .wifi-loader::before {
+    top: -70px;
+    left: -65px;
+    width: 160px;
+    height: 160px;
+
+    border: 15px solid transparent;
+    border-top: 15px solid #292a33;
+    border-bottom: 15px solid #292a33;
+  }
+  .wifi-loader::after {
+    top: -120px;
+    left: -115px;
+    width: 260px;
+    height: 260px;
+
+    border: 15px solid transparent;
+    border-top: 15px solid #292a33;
+    border-bottom: 15px solid #292a33;
+  }
+}
