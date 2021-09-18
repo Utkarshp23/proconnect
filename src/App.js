@@ -6,8 +6,8 @@ import ConnectedWindow from "./components/ConnectedWindow";
 function App() {
   return (
     <div className="App">
-      <ConnectBtn></ConnectBtn>
-      {/* <PopUpForm></PopUpForm> */}
+      {/* <ConnectBtn></ConnectBtn> */}
+      <PopUpForm></PopUpForm>
       {/* <WifiLoader></WifiLoader> */}
       {/* <ConnectedWindow></ConnectedWindow> */}
     </div>
