@@ -1,7 +1,7 @@
 import React from 'react'
 import '../stylesheets/connectedWindow.css'
-import { FaKeyboard,FaVideo } from "react-icons/fa";
-import { GiMouse} from "react-icons/gi";
+import { FaKeyboard, FaVideo } from "react-icons/fa";
+import { GiMouse } from "react-icons/gi";
 
 const ConnectedWindow = () => {
   return (

@@ -22,8 +22,8 @@ ul li {
 ul li a {
   position: relative;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ ul li a {
   line-height: 60px;
   background: #171515;
   border-radius: 50%;
-  font-size: 45px;
+  font-size: 40px;
   text-decoration: none;
   color: #666;
   transition: 0.5s;
@@ -99,4 +99,94 @@ ul li:hover > span {
   color: #aee1e1;
   box-shadow: 0 0 15px #98ded9;
   text-shadow: 0 0 15px #98ded9;
+}
+
+@media screen and (max-width: 671px) {
+  ul {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 140px 140px;
+    row-gap: 70px;
+  }
+
+  ul li:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    place-self: center;
+  }
+
+  ul li:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    place-self: center;
+  }
+
+  ul li:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    place-self: center;
+  }
+
+  ul li a {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  ul li span {
+    width: 130px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 130px;
+    grid-template-rows: 120px 120px 120px;
+    row-gap: 10px;
+    overflow-y: auto;
+  }
+
+  ul li:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    place-self: center;
+  }
+
+  ul li:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    place-self: center;
+  }
+
+  ul li:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-self: center;
+  }
+
+  ul li a {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  ul li span {
+    width: 110px;
+    font-size: 10px;
+  }
 }

@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       {/* <ConnectBtn></ConnectBtn> */}
       {/* <PopUpForm></PopUpForm> */}
-      <WifiLoader></WifiLoader>
-      {/* <ConnectedWindow></ConnectedWindow> */}
+      {/* <WifiLoader></WifiLoader> */}
+      <ConnectedWindow></ConnectedWindow>
     </div>
   );
 }
