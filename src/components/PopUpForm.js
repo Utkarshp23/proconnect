@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../stylesheets/popUpForm.css'
 
 
@@ -14,7 +15,9 @@ const PopUpForm = () => {
             <input type="text" name="" id="" placeholder="Enter IP address" />
           </div>
         </div>
-        <button className="ipBtn">Connect</button>
+        <Link to="/wifiloader">
+          <button className="ipBtn">Connect</button>
+        </Link>
       </div>
 
 
